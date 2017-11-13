@@ -59,12 +59,21 @@ In order to send html output email with Mutt, download and configure your .muttr
 
     #!/bin/bash 
     
-    /usr/bin/python /home/pi/instagram-unfollowers/main.py 528817151 2>&1 /dev/null
+    /usr/bin/python /home/pi/instagram-unfollowers/main.py 528817151 
     /usr/bin/mutt -e "my_hdr Content-Type: text/html" username@emailadress.com  -s "instagram report" < instagram-unfollowers/output.html
+
+Alternatively since strange usernames can mess up html view of email reader, its safer to use output.html as attachment.
+
+    #!/bin/bash 
+    
+    /usr/bin/python /home/pi/instagram-unfollowers/main.py 528817151 
+    /bin/echo "brtyb github.com/cagrio" | /usr/bin/mutt -a "output.html" -s "instagram weekly follow report" -- username@emailadress.com 
+
+
 
 And make sure you make it executable
 
-    chmod +x instagramReportEmail.sh
+    chmod +x instaReport.sh
 
 Check if that works and make sure you get the email. Now lets make it periodical. In order to make the linuxbox do some periodical tasks write
 
@@ -72,7 +81,7 @@ Check if that works and make sure you get the email. Now lets make it periodical
 
 to the terminal. Following example uses Mutt to send email.  It send email at every sunday at 4:16 pm. This line is added to the crontab file.
 
-16 16 * * 0 /home/pi/instagramReportEmail.sh
+16 16 * * SUN /home/pi/instaReport.sh
 
 
 iv. license
