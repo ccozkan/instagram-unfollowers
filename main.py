@@ -80,23 +80,14 @@ newunfollowers = []
 if os.path.exists('followers.json'):
     with open('followers.json') as data_file:
         oldfollowers = json.load(data_file)
-        for fr in followers:
+        for fr in oldfollowers:
             flag = True
-            for fg in oldfollowers:
-                if fg["pk"] != fr["pk"]:
+            for fg in followers:
+                if fg["pk"] == fr["pk"]:
                     flag = False
                     break
             if flag:
-                break
-for fr in oldfollowers:
-    flag = True
-    for fg in followers:
-        if fg["pk"] == fr["pk"]:
-            flag = False
-            break
-    if flag:
-        newunfollowers.append(fr)
-
+                newunfollowers.append(fr)
 
 newfollowings = []
 if os.path.exists('followings.json'):
