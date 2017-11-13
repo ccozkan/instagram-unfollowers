@@ -20,7 +20,10 @@ ii. install and run
 
 This project is based and forked from ahmdrz/instagram-statistics.
 
-In order to install the requirement packages. Type following to the terminal.
+In order to install the requirement packages and run the progam. Type following to the terminal.
+```
+git clone https://github.com/cagrio/instagram-unfollowers
+```
 ```
 pip install -r requirements.txt
 ```
