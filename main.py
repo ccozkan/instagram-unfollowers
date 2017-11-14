@@ -8,7 +8,7 @@ import json
 import pystache
 import io
 import webbrowser
-
+import random
 
 numer = sys.argv[1]
 print " ~ Connecting to Instagram"
@@ -132,7 +132,8 @@ data = {
     "newfollowings": newfollowings,
     "bestlikers": likedUsers[:20],
 #    "badlikers": likedUsers[len(likedUsers) - 10:],
-    "neverliked": neverLiked[0:10]
+    #"neverliked": neverLiked[0:10]
+    "neverliked": random.sample(neverLiked,10)
 }
 
 print " ~ Creating output.html"
