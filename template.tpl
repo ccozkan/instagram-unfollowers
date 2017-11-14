@@ -223,7 +223,7 @@
 
         <nav class="navbar navbar-inverse navbar-static-bottom">
             <div class="container">
-                <h4 class="text-center" style="color:white; margin-top:15px;">brtyb Çağrı Özkan</h4>         
+                <h4 class="text-center" style="color:white; margin-top:15px;">brtyb Cagri Ozkan</h4>         
             </div>
         </nav>
     </div>
