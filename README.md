@@ -48,6 +48,9 @@ After writing down the username and password run the program
 Write whoever you want to check.  You or your Ex or nasa. Lets say you're checking nasa's account.
 
     python main.py 528817151
+    
+
+And check html file with any browser. Firefox or elinks if you're working on the terminal.
   
 
 iii. some ideas
@@ -80,8 +83,10 @@ Check if that works and make sure you get the email. Now lets make it periodical
     crontab -e
 
 to the terminal. Following example uses Mutt to send email.  It send email at every sunday at 4:16 pm. This line is added to the crontab file.
+    
+    16 16 * * SUN /home/pi/instaReport.sh
 
-16 16 * * SUN /home/pi/instaReport.sh
+And it's all good now.
 
 
 iv. license
