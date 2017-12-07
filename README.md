@@ -12,6 +12,7 @@ i. information
  - Who liked your pics the most -- numerically of course :D
  - Who never liked your pics 
  
+**Note:** Lite version checks for the followers,unfollowers, not following backs only.
 
 **Also you can check other profiles too. Of course they need to be public or your following.**
 
