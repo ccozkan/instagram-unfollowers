@@ -13,6 +13,7 @@ i. information
  - Who never liked your pics 
  
 **Note:** Lite version doesn't check like related stuff.
+**[TODO]:** Ultra light version that only checks new not followed backs.
 
 **Also you can check other profiles too. Of course they need to be public or your following.**
 
