@@ -14,7 +14,9 @@ i. information
  
 **Note:** Lite version doesn't check like related stuff.
 
-**[TODO]:** Make a even lighter version that only checks new "not followed backs".
+~~**[TODO]:** Make a even lighter version that only checks new "not followed backs".~~
+
+**Note:** Ultralight version only checks "new not followed backs".
 
 **Also you can check other profiles too. Of course they need to be public or your following.**
 
@@ -31,7 +33,8 @@ git clone https://github.com/ozkc/instagram-unfollowers
 pip install -r requirements.txt
 ```
 In order to use you need to get instagram id. It is different than username and just contains numbers. It can be learn from various sites. 
-ex: http://www.ershad7.com/InstagramUserID/
+
+ex: [http://www.ershad7.com/InstagramUserID/](https://github.com/cagrio/instagram-unfollowers/blob/master/LICENSE)
  
  ![Alt Text](https://media.giphy.com/media/3ohs80R80RThSPnAkw/giphy.gif)
 
@@ -95,7 +98,3 @@ And it's all good now.
 iv. license
 ---------------
 See full license on [this](https://github.com/cagrio/instagram-unfollowers/blob/master/LICENSE) , Under GNU GENERAL PUBLIC LICENSE
-
-
-
-
