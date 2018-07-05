@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ```
 In order to use you need to get instagram id. It is different than username and just contains numbers. It can be learn from various sites. 
 
-ex: [http://www.ershad7.com/InstagramUserID/](https://github.com/cagrio/instagram-unfollowers/blob/master/LICENSE)
+ex: [http://www.ershad7.com/InstagramUserID/](http://www.ershad7.com/InstagramUserID/)
  
  ![Alt Text](https://media.giphy.com/media/3ohs80R80RThSPnAkw/giphy.gif)
 
