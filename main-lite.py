@@ -11,7 +11,7 @@ import webbrowser
 
 
 numer = sys.argv[1]
-#print " ~ Connecting to Instagram"
+
 #modify here
 insta = Instagram('usernmefoo', 'passwordfoo')                                   
 
@@ -98,9 +98,7 @@ data = {
     "newfollowings": newfollowings,
 }
 
-#print " ~ Creating output.html"
 output = pystache.render(tpl, data)
 with io.open('output.html', 'w', encoding='utf8') as f:
     f.write(output)
     
-#webbrowser.open_new_tab('output.html')
