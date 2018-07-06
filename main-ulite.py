@@ -11,7 +11,7 @@ import webbrowser
 
 
 numer = sys.argv[1]
-#print " ~ Connecting to Instagram"
+
 #modify here
 insta = Instagram('foousername', 'foopassword')                                   
 
@@ -37,7 +37,7 @@ for fr in followings:
             break
     if flag:
         notfollowedback.append(fr)
-#------
+
 
 newnotfollowedback = []
 if os.path.exists('notfollowedback.json'):
@@ -54,10 +54,6 @@ if os.path.exists('notfollowedback.json'):
                 mesaje='echo "'+str(fr)+' ---new not followed back--- " | sendxmpp -t foo@fooxmpp.com'
                 os.system(mesaje)
 
-
-#kisi = ''.join(str(e) for e in newunfollowers)
-
-#------
 newfollowers = []
 if os.path.exists('followers.json'):
     with open('followers.json') as data_file:
@@ -83,20 +79,6 @@ if os.path.exists('followers.json'):
                     break
             if flag:
                 newunfollowers.append(fr)
- #               mesaje='echo "'+str(fr)+' BİZİ UNFOLLOWLAMIŞ!!!1!!1!" | sendxmpp -t cagri@jabber.at'
- #               os.system(mesaje)
-
-#kisi = ''.join(str(e) for e in newunfollowers)
-#if kisi!='':
-#   mesaj=kisi+' bizi unfollowlamış" | sendxmpp -t cagri@jaber.at'
-#else:
-#    mesaj=' "'
-#mesaj2='echo "'+mesaj
-
-#os.system(mesaj2)
-
-
-#mesaje2='echo "'+kisi+' kişisi bizi unfollowlamış" | sendxmpp -t cagri@jabber.at'
 
 newfollowings = []
 if os.path.exists('followings.json'):
@@ -138,9 +120,7 @@ data = {
     "newfollowings": newfollowings,
 }
 
-#print " ~ Creating output.html"
 output = pystache.render(tpl, data)
 with io.open('output-lite.html', 'w', encoding='utf8') as f:
     f.write(output)
     
-#webbrowser.open_new_tab('output.html')
