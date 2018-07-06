@@ -42,7 +42,6 @@ We see that instagram user id for nasa is 528817151
 
 In order to use it you need to edit **main.py**
 ```
- print " ~ Connecting to Instagram"                                          
  #modify here                                                                
  insta = Instagram('usernamefoo', 'passfordfoo')                                   
              
