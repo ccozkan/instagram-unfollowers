@@ -48,11 +48,11 @@ In order to use it you need to edit **main.py**
 ```
 After writing down the username and password run the program
 
-    python main.py foouserid
+    python2.7 main.py foouserid
  
 Write whoever you want to check.  You or your Ex or nasa. Lets say you're checking nasa's account.
 
-    python main.py 528817151
+    python2.7 main.py 528817151
     
 
 And check html file with any browser. Firefox or elinks if you're working on the terminal.
@@ -67,14 +67,14 @@ In order to send html output email with Mutt, download and configure your .muttr
 
     #!/bin/bash 
     
-    /usr/bin/python /home/pi/instagram-unfollowers/main.py 528817151 
+    /usr/bin/python2.7 /home/pi/instagram-unfollowers/main.py 528817151 
     /usr/bin/mutt -e "my_hdr Content-Type: text/html" username@emailadress.com  -s "instagram report" < instagram-unfollowers/output.html
 
 Alternatively since strange usernames can mess up html view of email reader, its safer to use output.html as attachment.
 
     #!/bin/bash 
     
-    /usr/bin/python /home/pi/instagram-unfollowers/main.py 528817151 
+    /usr/bin/python2.7 /home/pi/instagram-unfollowers/main.py 528817151 
     /bin/echo "brtyb github.com/ozkc" | /usr/bin/mutt -a "output.html" -s "instagram weekly follow report" -- username@emailadress.com 
 
 
