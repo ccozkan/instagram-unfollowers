@@ -30,7 +30,7 @@ In order to install the requirement packages and run the progam. Type following 
 git clone https://github.com/ozkc/instagram-unfollowers
 ```
 ```
-pip install -r requirements.txt
+pip2 install -r requirements.txt
 ```
 In order to use you need to get instagram id. It is different than username and just contains numbers. It can be learn from various sites. 
 
