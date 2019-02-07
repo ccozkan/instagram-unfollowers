@@ -1,2 +1,2 @@
 pystache==0.5.4
-requests==2.18.2
+requests==2.21.0
